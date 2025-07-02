@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken')
-const userModel = require('../models/userModel')
+const userModel = require('../models/usermodel')
 const secret = process.env.JWT_SECRET || "Book Management project group-25."
 const exp = process.env.JWT_EXP || '360000s'
 
