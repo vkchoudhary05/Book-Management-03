@@ -47,7 +47,7 @@ const createBook = async function (req, res) {
         error.push("category is required")
       //checks for valid catagory
       if (data.category?.trim() && data.category.trim().match(/[^-_a-zA-Z]/))
-        error.push("enter valid category")
+        error.push("enter validddd category")
 
       //checks for valid subcategory conditions
       if(data.hasOwnProperty('subcategory')){
@@ -70,6 +70,7 @@ const createBook = async function (req, res) {
       if (error.length > 0)
         return error;
     }
+
 
     if (badRequest()) {
       let err = badRequest();
