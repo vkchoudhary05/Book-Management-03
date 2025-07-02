@@ -1,0 +1,27 @@
+{
+  "name": "book-management-03",
+  "version": "1.0.0",
+  "description": "### Key points - Create a group database `groupXDatabase`. You can clean the db you previously used and resue that. - This time each group should have a *single git branch*. Coordinate amongst yourselves by ensuring every next person pulls the code last pushed by a team mate. You branch will be checked as part of the demo. Branch name should follow the naming convention `project/booksManagementGroupX` - Follow the naming conventions exactly as instructed.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vkchoudhary05/Book-Management-03.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vkchoudhary05/Book-Management-03/issues"
+  },
+  "homepage": "https://github.com/vkchoudhary05/Book-Management-03#readme",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0",
+    "gitignore": "^0.7.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.16.1",
+    "nodemon": "^3.1.10"
+  }
+}
