@@ -1,5 +1,5 @@
-const bookModel = require("../models/bookModel")
-const reviewModel = require("../models/reviewModel")
+const bookModel = require("../models/bookmodel")
+const reviewModel = require("../models/reviewmodel")
 const mongoose = require("mongoose");
 
 //check Validity
