@@ -1,11 +1,11 @@
 const express = require('express');
 const router = express.Router();
-const { registerUser } = require("../controller/userController")
-const { userLogin } = require("../controller/loginController")
+const { registerUser } = require("../controllers/userController")
+const { userLogin } = require("../controllers/loginController")
 const { userAuthentication } = require("../middleware/authentication")
 const { userAuthor } = require("../middleware/authorization")
-const { createBook, getBooks, updateBook, deleteBooksBYId, getBooksReviews } = require("../controller/bookController")
-const {createReview, updateReview, deleteReview} = require("../controller/reviewController")
+const { createBook, getBooks, updateBook, deleteBooksBYId, getBooksReviews } = require("../controllers/bookController")
+const {createReview, updateReview, deleteReview} = require("../controllers/reviewController")
 
 //User API Route Handlers
 router.post("/register", registerUser)
@@ -19,9 +19,9 @@ router.put("/books/:bookId", userAuthentication, userAuthor, updateBook)
 router.delete("/books/:bookId", userAuthentication, userAuthor, deleteBooksBYId)
 
 //Review API Route Handlers
-router.post("/books/:bookId/review", createReview)
-router.put("/books/:bookId/review/:reviewId", updateReview)
-router.delete("/books/:bookId/review/:reviewId", deleteReview)
+// router.post("/books/:bookId/review", createReview)
+// router.put("/books/:bookId/review/:reviewId", updateReview)
+// router.delete("/books/:bookId/review/:reviewId", deleteReview)
 
 
 module.exports = router

@@ -1,4 +1,4 @@
-const userModel = require("../models/userModel")
+const userModel = require("../models/usermodel")
 
 //check Validity
 const isValid = (value) => {

@@ -1,6 +1,6 @@
-const {decodeToken} = require('../controller/loginController')
-const bookModel = require("../models/bookModel")
-const userModel = require("../models/userModel")
+const {decodeToken} = require('../controllers/loginController')
+const bookModel = require("../models/bookmodel")
+const userModel = require("../models/usermodel")
 const mongoose = require("mongoose");
 const ObjectId = mongoose.Types.ObjectId
 

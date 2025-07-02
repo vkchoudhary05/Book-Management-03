@@ -1,4 +1,4 @@
-const {decodeToken} = require('../controller/loginController')
+const {decodeToken} = require("../controllers/loginController")
 
 const userAuthentication = async (req,res,next) => {
     try{
